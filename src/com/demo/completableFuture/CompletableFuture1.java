@@ -3,6 +3,10 @@ package com.demo.completableFuture;
 import java.util.Arrays;
 import java.util.concurrent.CompletableFuture;
 
+/**
+ * This is the first sample with CompletableFuture.
+ * Shows how to run a time consuming process in a separate thread
+ */
 public class CompletableFuture1 {
 
     public static void main(String arg[]) throws Exception {
@@ -22,16 +26,6 @@ public class CompletableFuture1 {
         return 10;
     }
 }
-
-
-
-
-
-
-
-
-
-
 
 
 /*

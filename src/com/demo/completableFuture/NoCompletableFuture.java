@@ -1,5 +1,9 @@
 package com.demo.completableFuture;
 
+
+/**
+ * This is a simple plain java class to prepare the mindset towards CompletableFuture.
+ */
 public class NoCompletableFuture {
 
     public static void main(String arg[]) {

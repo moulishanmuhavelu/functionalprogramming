@@ -2,6 +2,10 @@ package com.demo.completableFuture;
 
 import java.util.concurrent.CompletableFuture;
 
+
+/**
+ * Proves that CompletableFuture is run in a separate thread by printing the thread ids
+ */
 public class CompletableFuture3 {
 
     public static void main(String arg[]) throws Exception {

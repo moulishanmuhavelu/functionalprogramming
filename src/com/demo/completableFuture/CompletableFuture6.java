@@ -2,6 +2,11 @@ package com.demo.completableFuture;
 
 import java.util.concurrent.CompletableFuture;
 
+
+/**
+ * This is the code sample for exception handling in CompletableFuture.
+ * It has 2 paths. normal and exception path.
+ */
 public class CompletableFuture6 {
 
     public static void main(String arg[]) throws Exception {

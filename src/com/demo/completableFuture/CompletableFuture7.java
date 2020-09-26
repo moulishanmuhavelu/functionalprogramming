@@ -3,6 +3,10 @@ package com.demo.completableFuture;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.TimeUnit;
 
+
+/**
+ * This is the example for Time out function in CompletableFuture
+ */
 public class CompletableFuture7 {
 
     public static void main(String arg[]) throws Exception {

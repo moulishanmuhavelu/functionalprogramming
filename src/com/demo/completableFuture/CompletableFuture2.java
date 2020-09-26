@@ -2,6 +2,9 @@ package com.demo.completableFuture;
 
 import java.util.concurrent.CompletableFuture;
 
+/**
+ * This program shows the implementation of Runnable interface
+ */
 public class CompletableFuture2 {
 
     public static void main(String arg[]) throws Exception {

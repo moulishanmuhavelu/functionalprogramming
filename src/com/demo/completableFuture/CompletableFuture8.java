@@ -2,6 +2,10 @@ package com.demo.completableFuture;
 
 import java.util.concurrent.CompletableFuture;
 
+
+/**
+ * This is the example for combining the results of two CompletableFuture
+ */
 public class CompletableFuture8 {
 
     public static void main(String arg[]) throws Exception {
@@ -12,7 +16,7 @@ public class CompletableFuture8 {
                 .thenCombine(buyManyBottlesOfBeerAsync(), (str1, str2) -> str1 + " and " + str2)
                 .thenAccept(System.out::println);
 
-        sleep(40);
+        sleep(2000);
 
         System.out.println("Program completed ");
     }

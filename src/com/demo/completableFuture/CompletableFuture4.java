@@ -2,6 +2,10 @@ package com.demo.completableFuture;
 
 import java.util.concurrent.CompletableFuture;
 
+
+/**
+ * This code shows how we can call thenApply and build a pipeline
+ */
 public class CompletableFuture4 {
 
     public static void main(String arg[]) throws Exception {
