@@ -15,22 +15,13 @@ public class CompletableFuture11 {
 
         ExecutorService executorService = Executors.newFixedThreadPool(10);
         makePizzaAsync(executorService)
-                .thenApply(s->buyDrinksAsync(s))
+                .thenApplyAsync(s->buyDrinksAsync(s, executorService))
                 .thenAccept(System.out::println);
 
         sleep(4000);
 
         System.out.println("Thread in main -" + Thread.currentThread());
         System.out.println("Program completed ");
-    }
-
-    private static int timeConsumingProcess() {
-        try {
-            Thread.sleep(3000);
-        } catch(Exception e) {
-            return 1000;
-        }
-        return 10;
     }
 
     private static CompletableFuture<String> makePizzaAsync(ExecutorService executorService) {
@@ -41,7 +32,7 @@ public class CompletableFuture11 {
         }, executorService);
     }
 
-    private static String buyDrinksAsync(String previousStatus) {
+    private static String buyDrinksAsync(String previousStatus, ExecutorService executorService) {
         System.out.println("Thread in buyDrinksAsync-" + Thread.currentThread());
         return previousStatus + " and " + "Drinks ready";
     }

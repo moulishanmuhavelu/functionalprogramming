@@ -1,9 +1,6 @@
 package com.demo.completableFuture;
 
-import java.util.concurrent.Callable;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
+import java.util.concurrent.*;
 
 public class JustFuture {
 
@@ -25,6 +22,7 @@ public class JustFuture {
 
         executorService.shutdown();
         System.out.println("Program Started");
+
     }
 
     private static Callable<String> createCallable() {

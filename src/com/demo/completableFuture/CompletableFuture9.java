@@ -11,6 +11,8 @@ public class CompletableFuture9 {
 
         System.out.println("Program Started ");
 
+        // If getPassportAsync() returned a String we could have just used thenApply() method.
+        // but it returns a CompletableFuture<CompletableFuture<String>>. So for this we need to use thenCombine only
         getPassportAsync()
                 .thenCompose((passportStatus) -> getVisaAsync(passportStatus))
                 .thenAccept(System.out::println);
