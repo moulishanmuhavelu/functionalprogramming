@@ -14,7 +14,7 @@ public class CompletableFuture5 {
         System.out.println("main Thread=" + Thread.currentThread());
 
         CompletableFuture<Integer> completableFuture = new CompletableFuture<>();
-        process2(completableFuture);
+        process(completableFuture);
         completableFuture.complete(7);
         System.out.println("Program completed ");
     }

@@ -2,7 +2,9 @@ package com.demo.completableFuture;
 
 import java.util.concurrent.*;
 
-
+/**
+ * This sample program shows that CompletableFuture is never destroyed
+ */
 public class CompletableFutureVoid {
 
     public static void main(String arg[]) {
