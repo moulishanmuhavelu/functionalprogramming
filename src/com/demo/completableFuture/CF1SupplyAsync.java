@@ -19,6 +19,7 @@ public class CF1SupplyAsync {
 
     private static int timeConsumingProcess() {
         try {
+            System.out.println("Entered time Consuming Process");
             Thread.sleep(3000);
         } catch(Exception e) {
             return 1000;
